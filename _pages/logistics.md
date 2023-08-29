@@ -10,17 +10,17 @@ title: Information / 과정정보
 
 ### Course Information / 과정정보
 
-웹 페이지를 개발하기 위한 기본 언어인 HTML/XHTML, CSS, JavaScript 의 기본 문법을 이해한다.
+시간이 지나도 변하지 않고 컴퓨팅 세계의 기반을 강화하는 데 도움이 되는 전문적이고 안전하며 이식 가능한 C 코드를 작성하는 방법을 알아본다.
 
-- **컴퓨팅사고력(50%)** 문제를 분석하고, 한정된 조건을 고려하여 문제 해결 방법을 찾을 수 있음
-- **데이터 분석과 표현능력(20%)** 수집된 데이터의 형식을 이해하고, 응용 분야에 적합한 형태로 변화, 활용할 수 있음
-- **알고리즘과 프로그래밍 능력(30%)** 문제 해결을 위한 알고리즘을 설계하고, 복잡도를 분석할 수 있으며, 프로그램으로 구현할 수 있음
+- **프로그래밍(50%)** 직무에 필요한 문제 또는 시스템을 프로그래밍 언어로 구현할 수 있는 역량
+- **전공기초(40%)** 정보통신전공을 수행할 수 있는 공학적 기초개념, 수학, 물리학 등의 기본역량
+- **자기주도문제해결(10%)** 프로젝트, 캡스톤디자인 및 지식재산권, 공학경영, 논문작성 등 전공분야에 밀접하게 연관된 비전공분야의 역량
 
-Students will understand the basic grammar of HTML/XHTML, CSS, and JavaScript, which are the basic languages for developing web pages.
+Students will learn how to write professional, safe, and portable C code that doesn't change over time and helps strengthen the foundations of the world of computing.
 
-- **Computational thinking ability (50%)** Able to analyze problems and find solutions to problems in consideration of limited conditions
-- **Data analysis and expression ability (20%)** Able to understand the format of collected data, and be able to change and utilize it in a form suitable for the application field
-- **Algorithm and programming ability (30%)** Able to design algorithms to solve problems, analyze their complexity, and implement them as programs
+- **Programming (50%)** Ability to implement problems or systems required for the job in a programming language
+- **Major foundations (40%)** Basic competencies such as basic engineering concepts, mathematics, physics, etc.
+- **Self-directed problem solving (10%)** Competence in non-major fields closely related to major fields, such as project, capstone design and intellectual property rights, engineering management, and thesis writing
 
 ---
 
