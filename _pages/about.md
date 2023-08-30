@@ -1,7 +1,7 @@
 ---
 layout: about
 permalink: /
-title: 고급<b>C</b>프로그래밍 Advanced <b>C</b> Programming
+title: 고급<b>C</b>프로그래밍 <br/> Advanced <b>C</b> Programming
 description: INFO2104 • 2023년 2학기 • 한밭대학교
 logo: hanbat-logo.jpg
 news: true
