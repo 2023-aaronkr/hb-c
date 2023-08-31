@@ -9,7 +9,7 @@ news: true
 
 - **Time:** 금 789 | Friday 3:00pm-5:50pm
 - **Location:** [N4동 316호](https://naver.me/Ga2jXDVh){:target="\_blank"}
-- **KakaoTalk AM:** [카카오톡 ☕ 오픈채팅](https://open.kakao.com/o/g7tnYPDf){:target="\_blank"}
+- **KakaoTalk AM:** [카카오톡 오픈채팅](https://open.kakao.com/o/g7tnYPDf){:target="\_blank"}
 
 <!--
 - **Discussion:** [Piazza](https://piazza.com/class/jqh4n6275r82yq){:target="\_blank"}
