@@ -12,7 +12,9 @@ permalink: /resources/
 
 The software we will be using is listed below. 수업에서 사용할 소프트웨어가 다음과 같다.
 
+- [Visual Studio Community](https://visualstudio.microsoft.com/free-developer-offers/)
 - [Visual Studio Code](https://code.visualstudio.com/download)
+- [Code::Blocks (MinGW)](http://www.codeblocks.org/downloads)
 
 ### Textbook Resources / 교재자료
 
