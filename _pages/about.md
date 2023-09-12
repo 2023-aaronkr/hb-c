@@ -10,6 +10,7 @@ news: true
 - **Time:** 금 6789 | Friday 2:00pm-5:50pm
 - **Location:** [N4동 316호](https://naver.me/Ga2jXDVh){:target="\_blank"}
 - **KakaoTalk:** [카카오톡 오픈채팅](https://open.kakao.com/o/g7tnYPDf){:target="\_blank"}
+- **Portal:** [한밭대학교 포탈](https://my.hanbat.ac.kr){:target="\_blank"}
 
 <!--
 - **Discussion:** [Piazza](https://piazza.com/class/jqh4n6275r82yq){:target="\_blank"}
