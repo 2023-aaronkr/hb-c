@@ -21,7 +21,8 @@
   slides: "https://docs.google.com/presentation/d/1Lc9PPqllqBKdVkJpFgYEStOzMvSfbHkxbD-Qcs8YPA0/edit?usp=sharing"
   readings:
   logistics: >
-    <a href="https://classroom.github.com/a/jIHGvihm">3주차 과제 링크</a>
+    - <a href="https://classroom.github.com/a/jIHGvihm">3주차 과제 링크</a>
+    - <a href="https://raw.githubusercontent.com/2023-aaronkr/week-3-data-types-jekkilekki/main/.gitignore?token=GHSAT0AAAAAACHTVMYOQ7H66AEBITJ6VSQ2ZID63EQ">.gitignore</a>
 
 - date: 9/22
   week: 4
