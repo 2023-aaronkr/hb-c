@@ -11,7 +11,7 @@
   title: >
     <strong>1장: C 시작하기</strong>
   slides: "https://docs.google.com/presentation/d/1QJSRsi_EfGGg5VXD3RJNvrNu-PPicD0FI_Hso7LUTZw/edit?usp=sharing"
-  readings:
+  readings: Effective C, 1장 pp. 1-50
   logistics:
 
 - date: 9/15
@@ -19,17 +19,16 @@
   title: >
     <strong>2장: 개체와 함수, 형식</strong>
   slides: "https://docs.google.com/presentation/d/1Lc9PPqllqBKdVkJpFgYEStOzMvSfbHkxbD-Qcs8YPA0/edit?usp=sharing"
-  readings:
+  readings: Effective C, 2장 pp. 51-81
   logistics: >
-    - <a href="https://classroom.github.com/a/jIHGvihm">3주차 과제 링크</a>
-    - <a href="https://raw.githubusercontent.com/2023-aaronkr/week-3-data-types-jekkilekki/main/.gitignore?token=GHSAT0AAAAAACHTVMYOQ7H66AEBITJ6VSQ2ZID63EQ">.gitignore</a>
+    <a href="https://classroom.github.com/a/jIHGvihm">3주차 과제</a>
 
 - date: 9/22
   week: 4
   title: >
     <strong>3장: 산술 형식</strong>
   slides:
-  readings:
+  readings: Effective C, 3장 pp. 83-111
   logistics:
 
 - date: 9/29
@@ -45,7 +44,7 @@
   title: >
     <strong>4장: 식과 연산자</strong>
   slides:
-  readings:
+  readings: Effective C, 4장 pp. 113-145
   logistics:
 
 - date: 10/13
@@ -53,7 +52,7 @@
   title: >
     <strong>5장: 흐름 제어</strong>
   slides:
-  readings:
+  readings: Effective C, 5장 pp. 147-169
   logistics:
 
 - date: 10/20
@@ -66,7 +65,7 @@
   title: >
     <strong>6장: 동적으로 할당횐 메모리</strong>
   slides:
-  readings:
+  readings: Effective C, 6장 pp. 171-199
   logistics:
 
 - date: 11/3
@@ -74,7 +73,7 @@
   title: >
     <strong>7장: 문자와 문자열</strong>
   slides:
-  readings:
+  readings: Effective C, 7장 pp. 201-239
   logistics:
 
 - date: 11/10
@@ -82,7 +81,7 @@
   title: >
     <strong>8장: 입출력</strong>
   slides:
-  readings:
+  readings: Effective C, 8장 pp. 241-271
   logistics:
 
 - date: 11/17
@@ -90,7 +89,7 @@
   title: >
     <strong>9장: 전처리기</strong>
   slides:
-  readings:
+  readings: Effective C, 9장 pp. 273-290
   logistics:
 
 - date: 11/24
@@ -98,7 +97,7 @@
   title: >
     <strong>10장: 프로그램 구조</strong>
   slides:
-  readings:
+  readings: Effective C, 10장 pp. 291-310
   logistics:
 
 - date: 12/1
@@ -106,7 +105,7 @@
   title: >
     <strong>11장: 디버깅과 테스트, 분석</strong>
   slides:
-  readings:
+  readings: Effective C, 11장 pp. 311-342
   logistics:
 
 - date: 12/8
