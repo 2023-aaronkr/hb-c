@@ -27,9 +27,10 @@
   week: 4
   title: >
     <strong>3장: 산술 형식</strong>
-  slides:
+  slides: "https://docs.google.com/presentation/d/1Q553yZIwS74CQVVjLVKeth-bbHW173E7proCZWUr8PM/edit?usp=sharing"
   readings: Effective C, 3장 pp. 83-111
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/T5Pf7S5z">3주차 과제</a>
 
 - date: 9/29
   week: 5
