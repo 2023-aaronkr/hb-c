@@ -35,7 +35,7 @@
 - date: 9/29
   week: 5
   title: >
-    <strong>No School</strong> Chuseok
+    <strong>No School</strong> Chuseok <span style="color: red">(보강: 12월8일)</span>
   slides:
   readings:
   logistics:
@@ -44,7 +44,7 @@
   week: 6
   title: >
     <strong>4장: 식과 연산자</strong>
-  slides:
+  slides: "https://docs.google.com/presentation/d/1BHuRgvEzR1LXd2Q3Y_4aGK_-i2mCuRlMEujbt_zcNHw/edit?usp=sharing"
   readings: Effective C, 4장 pp. 113-145
   logistics:
 
@@ -109,12 +109,12 @@
   readings: Effective C, 11장 pp. 311-342
   logistics:
 
-- date: 12/8
+- date: 12/8 (５주차 보강)
   week: 15
   title: >
-    <strong>Final Project / Final Test</strong>
+    <strong>Final Project?</strong>
 
 - date: 12/15
   week: 16
   title: >
-    <strong>Final Grades</strong>
+    <strong>Final Test</strong>
