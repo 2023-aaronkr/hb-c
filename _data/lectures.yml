@@ -11,7 +11,7 @@
   title: >
     <strong>1장: C 시작하기</strong>
   slides: "https://docs.google.com/presentation/d/1QJSRsi_EfGGg5VXD3RJNvrNu-PPicD0FI_Hso7LUTZw/edit?usp=sharing"
-  readings: Effective C, 1장 pp. 1-50
+  readings: Effective C, <strong>1장 pp. 1-50</strong>
   logistics:
 
 - date: 9/15
@@ -19,7 +19,7 @@
   title: >
     <strong>2장: 개체와 함수, 형식</strong>
   slides: "https://docs.google.com/presentation/d/1Lc9PPqllqBKdVkJpFgYEStOzMvSfbHkxbD-Qcs8YPA0/edit?usp=sharing"
-  readings: Effective C, 2장 pp. 51-81
+  readings: Effective C, <strong>2장 pp. 51-81</strong>
   logistics: >
     <a href="https://classroom.github.com/a/jIHGvihm">3주차 과제</a>
 
@@ -28,7 +28,7 @@
   title: >
     <strong>3장: 산술 형식</strong>
   slides: "https://docs.google.com/presentation/d/1Q553yZIwS74CQVVjLVKeth-bbHW173E7proCZWUr8PM/edit?usp=sharing"
-  readings: Effective C, 3장 pp. 83-111
+  readings: Effective C, <strong>3장 pp. 83-111</strong>
   logistics: >
     <a href="https://classroom.github.com/a/T5Pf7S5z">4주차 과제</a>
 
@@ -45,7 +45,7 @@
   title: >
     <strong>4장: 식과 연산자</strong>
   slides: "https://docs.google.com/presentation/d/1BHuRgvEzR1LXd2Q3Y_4aGK_-i2mCuRlMEujbt_zcNHw/edit?usp=sharing"
-  readings: Effective C, 4장 pp. 113-145
+  readings: Effective C, <strong>4장 pp. 113-145</strong>
   logistics:
 
 - date: 10/13
@@ -53,7 +53,7 @@
   title: >
     <strong>5장: 흐름 제어</strong>
   slides:
-  readings: Effective C, 5장 pp. 147-169
+  readings: Effective C, <strong>5장 pp. 147-169</strong>
   logistics:
 
 - date: 10/20
@@ -66,7 +66,7 @@
   title: >
     <strong>6장: 동적으로 할당횐 메모리</strong>
   slides:
-  readings: Effective C, 6장 pp. 171-199
+  readings: Effective C, <strong>6장 pp. 171-199</strong>
   logistics:
 
 - date: 11/3
@@ -74,7 +74,7 @@
   title: >
     <strong>7장: 문자와 문자열</strong>
   slides:
-  readings: Effective C, 7장 pp. 201-239
+  readings: Effective C, <strong>7장 pp. 201-239</strong>
   logistics:
 
 - date: 11/10
@@ -82,7 +82,7 @@
   title: >
     <strong>8장: 입출력</strong>
   slides:
-  readings: Effective C, 8장 pp. 241-271
+  readings: Effective C, <strong>8장 pp. 241-271</strong>
   logistics:
 
 - date: 11/17
@@ -90,7 +90,7 @@
   title: >
     <strong>9장: 전처리기</strong>
   slides:
-  readings: Effective C, 9장 pp. 273-290
+  readings: Effective C, <strong>9장 pp. 273-290</strong>
   logistics:
 
 - date: 11/24
@@ -98,7 +98,7 @@
   title: >
     <strong>10장: 프로그램 구조</strong>
   slides:
-  readings: Effective C, 10장 pp. 291-310
+  readings: Effective C, <strong>10장 pp. 291-310</strong>
   logistics:
 
 - date: 12/1
@@ -106,7 +106,7 @@
   title: >
     <strong>11장: 디버깅과 테스트, 분석</strong>
   slides:
-  readings: Effective C, 11장 pp. 311-342
+  readings: Effective C, <strong>11장 pp. 311-342</strong>
   logistics:
 
 - date: 12/8 (５주차 보강)
