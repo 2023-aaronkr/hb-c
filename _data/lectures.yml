@@ -46,7 +46,8 @@
     <strong>4장: 식과 연산자</strong>
   slides: "https://docs.google.com/presentation/d/1BHuRgvEzR1LXd2Q3Y_4aGK_-i2mCuRlMEujbt_zcNHw/edit?usp=sharing"
   readings: Effective C, <strong>4장 pp. 113-145</strong>
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/uk1c2rKn">6주차 과제</a>
 
 - date: 10/13
   week: 7
