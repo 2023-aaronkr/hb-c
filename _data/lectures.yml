@@ -53,14 +53,22 @@
   week: 7
   title: >
     <strong>5장: 흐름 제어</strong>
-  slides:
-  readings: Effective C, <strong>5장 pp. 147-169</strong>
-  logistics:
+  slides: "https://docs.google.com/presentation/d/1Ih-a_lVVs3mdpUvcApsPxS1CFPW5YnDdLIcACdFxEjs/edit?usp=sharing"
+  readings: >
+    Effective C, <strong>5장 pp. 147-169</strong><br>
+    <a href="https://docs.google.com/presentation/d/12ipAGNkgpFjuvEGqwMeIEmDFCbpVjv9b1j8EJ8cxu_g/edit?usp=sharing">중간고사 가이드</a>
+  logistics: >
+    <a href="https://classroom.github.com/a/4Jlu2zNO">7주차 과제</a>
 
 - date: 10/20
   week: 8
   title: >
     <strong>Midterm Test</strong>
+  slides: "https://docs.google.com/presentation/d/12ipAGNkgpFjuvEGqwMeIEmDFCbpVjv9b1j8EJ8cxu_g/edit?usp=sharing"
+  readings: <a href="/midterm">중간고사 가이드</a>
+  logistics: >
+    퀴즈 링크<br>
+    실기 시험
 
 - date: 10/27
   week: 9
