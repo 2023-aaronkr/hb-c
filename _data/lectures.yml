@@ -56,7 +56,7 @@
   slides: "https://docs.google.com/presentation/d/1Ih-a_lVVs3mdpUvcApsPxS1CFPW5YnDdLIcACdFxEjs/edit?usp=sharing"
   readings: >
     Effective C, <strong>5장 pp. 147-169</strong><br>
-    <a href="https://docs.google.com/presentation/d/12ipAGNkgpFjuvEGqwMeIEmDFCbpVjv9b1j8EJ8cxu_g/edit?usp=sharing">중간고사 가이드</a>
+    <a href="/midterm">중간고사 가이드</a>
   logistics: >
     <a href="https://classroom.github.com/a/4Jlu2zNO">7주차 과제</a>
 
@@ -65,7 +65,7 @@
   title: >
     <strong>Midterm Test</strong>
   slides: "https://docs.google.com/presentation/d/12ipAGNkgpFjuvEGqwMeIEmDFCbpVjv9b1j8EJ8cxu_g/edit?usp=sharing"
-  readings: <a href="/midterm">중간고사 가이드</a>
+  readings:
   logistics: >
     퀴즈 링크<br>
     실기 시험
