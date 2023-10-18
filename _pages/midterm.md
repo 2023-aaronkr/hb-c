@@ -431,20 +431,135 @@ int main(void) {
 */
 ```
 
-#### 3.2. 부동 소수점
+#### 정수 상수
 
-- 부동 소수점 형식
-- 부동 소수점 산술
-- 부동 소수점 값
-- 부동 소수점 상수
+- **정수 상수integer constant**는 정수 형식의 값이다.
+- **정수 상수의 형식**은 정수 상수의 값과 표현 방식에 따라 결정된다.
+- **정수 상수의 표현**은 정수 상수의 값이 개체에 할당된 스토리지의 비트에 있는 값을 특정 인코딩하는 것이다.
 
-#### 3.3. 정수와 부동 소수점 형식
+정수 상수는 다음과 같은 형식을 갖는다.
 
-- 정수 변환 순위
-- 정수 확장
-- 일반 산술 변환
-- 암시적 변환의 예
-- 안전한 변환
+- **10진수 상수** : 10진수 상수는 0부터 9까지의 숫자로 구성된다.
+- **8진수 상수** : 8진수 상수는 0부터 7까지의 숫자로 구성된다.
+- **16진수 상수** : 16진수 상수는 0부터 9까지의 숫자와 A부터 F까지의 문자로 구성된다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42; // 10진수 상수
+    int j = 0x2a; // 16진수 상수
+    int k = 052; // 8진수 상수
+    int b = 0b101010; // 2진수 상수
+    printf("%d\n", i);
+    printf("%d\n", j);
+    printf("%d\n", k);
+    printf("%d\n", b);
+    return 0;
+}
+```
+
+**Converting between decimal, binary, octal and hexadecimal / 10진수, 2진수, 8진수, 16진수 변환**
+
+| 10진수 | 2진수 | 8진수 | 16진수 |
+| :----: | :---: | :---: | :----: |
+|   0    |  000  |  000  |   0    |
+|   1    |  001  |  001  |   1    |
+|   2    |  010  |  002  |   2    |
+|   3    |  011  |  003  |   3    |
+|   4    |  100  |  004  |   4    |
+|   5    |  101  |  005  |   5    |
+|   6    |  110  |  006  |   6    |
+|   7    |  111  |  007  |   7    |
+|   8    | 1000  |  010  |   8    |
+|   9    | 1001  |  011  |   9    |
+|   10   | 1010  |  012  |   A    |
+|   11   | 1011  |  013  |   B    |
+|   12   | 1100  |  014  |   C    |
+|   13   | 1101  |  015  |   D    |
+|   14   | 1110  |  016  |   E    |
+|   15   | 1111  |  017  |   F    |
+|   16   | 10000 |  020  |   10   |
+
+**모든 진수 -> 10진수**
+
+- 2진수: `11001010` -> 10진수: `202` = `1 * 2^7 + 1 * 2^6 + 0 * 2^5 + 0 * 2^4 + 1 * 2^3 + 0 * 2^2 + 1 * 2^1 + 0 * 2^0`
+- 8진수: `052` -> 10진수: `42` = `5 * 8^1 + 2 * 8^0`
+- 16진수: `0x2a` -> 10진수: `42` = `2 * 16^1 + 10 * 16^0`
+
+**2진수 -> 다른 진수**
+
+- 2진수: `0b10110100010101101`
+  - 8진수: `0o26515` (8진수는 3비트씩 끊어서 계산 = `0b10_110_100_010_101_101`)
+  - 10진수: `11309` (2^14 + 2^12 + 2^10 + 2^8 + 2^6 + 2^4 + 2^2 + 2^0)
+  - 16진수: `0x2b0ad` (16진수는 4비트씩 끊어서 계산 = `0b10_1011_0000_1010_1101`)
+
+#### 부동 소수점
+
+부동 소수점 표현은 과학적 표기법을 사용해 숫자를 **밀수base number**와 **지수exponent**로 인코딩하는 기술이다.
+
+- 10진수 123.456 = 1.23456 x 102
+- 2진수 0b10100.110 = 1.0100110 x 24
+
+**종류**
+
+- `float` : 4바이트
+  - 1비트는 *부호*를 나타낸다.
+  - 8비트는 *지수*를 나타낸다.
+  - 23비트는 *밀수*를 나타낸다.
+- `double` : 8바이트
+  - 1비트는 *부호*를 나타낸다.
+  - 11비트는 *지수*를 나타낸다.
+  - 52비트는 *밀수*를 나타낸다.
+- `long double` : 10바이트
+  - 1비트는 *부호*를 나타낸다.
+  - 15비트는 *지수*를 나타낸다.
+  - 64비트는 *밀수*를 나타낸다.
+- `long double` : 16바이트 (IEC 605594배정밀도 (또는 binary128))
+  - 1비트는 *부호*를 나타낸다.
+  - 14비트는 *지수*를 나타낸다.
+  - 113비트는 *밀수*를 나타낸다.
+
+#### 부동 소수점 상수
+
+- **부동 소수점 상수floating-point constant**는 부동 소수점 형식의 값이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    float f = 3.14;
+    double d = 3.141592;
+    long double ld = 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679;
+    printf("%f\n", f);
+    printf("%lf\n", d);
+    printf("%Lf\n", ld);
+    return 0;
+}
+```
+
+#### 산술 변환
+
+- **정수 산술 변환integer promotion**은 정수 형식의 피연산자를 다른 정수 형식으로 변환하는 것이다.
+- **부동 소수점 산술 변환floating-point promotion**은 부동 소수점 형식의 피연산자를 다른 부동 소수점 형식으로 변환하는 것이다.
+- **정수-부동 소수점 변환integer-floating conversion**은 정수 형식의 피연산자를 부동 소수점 형식으로 변환하는 것이다.
+- **부동 소수점-정수 변환floating-integer conversion**은 부동 소수점 형식의 피연산자를 정수 형식으로 변환하는 것이다.
+
+**정수 변환 순위integer conversion rank**
+
+- `long double` (재일 큼)
+- `double`
+- `float`
+- `unsigned long long`
+- `long long`
+- `unsigned long`
+- `long`
+- `unsigned int`
+- `int`
+- `char`
+- `signed char`
+- `unsigned char`
+- `_Bool` (재일 작음)
 
 [목차로 돌아가기](#midterm-guide--중간고사-가이드)
 
@@ -452,53 +567,276 @@ int main(void) {
 
 ### 4. 식과 연산자
 
+#### C언어에 있는 연산자
+
+|                    연산자                     |        설명        |      종류      |
+| :-------------------------------------------: | :----------------: | :------------: |
+|        +, -, !, ~, ++, --, (type), \*         |    Unary (단항)    |  Unary (단항)  |
+|                +, -, \*, /, %                 | Arithmetic (곱셈)  | Binary (이항)  |
+|             <, <=, >, >=, ==, !=              | Relational (관계)  | Binary (이항)  |
+|                   &&, \|\|                    |   Logical (논리)   | Binary (이항)  |
+|               &, \|, ^, <<, >>                |   Bitwise (비트)   | Binary (이항)  |
+| =, +=, -=, \*=, /=, %=, &=, \|=, ^=, <<=, >>= | Assignment (할당)  | Binary (이항)  |
+|                      ?:                       | Conditional (조건) | Ternary (삼항) |
+
 #### 4.1. 단순 할당
 
-#### 4.2. 평가
+- **식expression**은 **피연산자operand**와 **연산자operator**로 구성된다.
+- **단순 할당simple assignment**은 **할당 연산자assignment operator**를 사용해 개체에 값을 할당하는 것이다.
+- **정의declaration**하고
+  **초기화initialization**하는 선언이다.
+  - r-value와 l-value의 개념을 알아야 한다.
+  - r-value는 값을 가지는 것이고 l-value는 주소를 가지는 것이다.
+  - r-value는 l-value가 될 수 없다.
+  - l-value는 r-value가 될 수 있다.
+  - l-value는 메모리에 저장된다.
+  - r-value는 메모리에 저장되지 않는다.
+  - l-value는 주소를 가지고 있기 때문에 r-value를 가질 수 있다.
+- **잘라내기truncation**는 부동 소수점 형식의 값을 정수 형식으로 변환하는 것이다.
 
-#### 4.3. 함수 호출
+#### 증가 및 감소 연산자
 
-#### 4.4. 증가 및 감소 연산자
+- **증가 연산자increment operator**는 피연산자의 값을 1만큼 증가시킨다.
+  - 전위 증가 연산자pre-increment operator (`++i`)
+  - 후위 증가 연산자post-increment operator (`i++`)
+- **감소 연산자decrement operator**는 피연산자의 값을 1만큼 감소시킨다.
+  - 전위 감소 연산자pre-decrement operator (`--i`)
+  - 후위 감소 연산자post-decrement operator (`i--`)
 
-#### 4.5. 연산자 우선순위 및 결합성
+전위 증가 연산자와 후위 증가 연산자의 차이점은 전위 증가 연산자는 증가시킨 값을 반환하고 후위 증가 연산자는 증가시키기 전 값을 반환한다는 것이다.
 
-#### 4.6. 평가 순서
+```c
+#include <stdio.h>
 
-- 비순차적 평가와 규정되지 않은 순차적 평가
-- 시퀀스 포인트
+int main(void) {
+    int i = 0;
+    printf("%d\n", ++i); // 1
+    printf("%d\n", i++); // 1
+    printf("%d\n", i); // 2
+    return 0;
+}
+```
 
-#### 4.7. sizeof 연산자
+#### 평가 순서
 
-#### 4.8. 산술 연산자
+**비순차적 평가와 규정되지 않은 순차적 평가**
 
-- 단항 연산자 + 와 -
-- 논리 부정 연산자 !
-- 곱하기 연산자 \* / %
-- 더하기 연산자 + -
+- 이 식의 비순차적 평가unsequenced evaluation는 어떤 순서로든 수행할 수 있다.
+- 이렇게 하면 컴파일러는 레지스터register에서 연산과 캐시 값cache value을 재정렬해reordering 전체 실행 속도를 높일 수 있다.
 
-#### 4.9. 비트 연산자
+**시퀀스 포인트**
 
-- 보수 연산자 ~
-- 시프트 연산자 << >>
-- 비트 AND 연산자 &
-- 비트 XOR 연산자 ^ (배타적 OR)
-- 비트 OR 연산자 | (포과적 OR)
+- 시퀀스 포인트sequence point는 모든 파생 작업이 끝나는 분기점juncture 이다.
+- 시퀀스 포인트는 하나의 전체 식full expression (다른 식이나 선언의 일부가 아닌 식)과 평가할 디움 전체 식 간에 발생한다. 시퀀스 포인트는 호출된 함수로 들어가거나 빠져나올 때도 발생한다.
 
-#### 4.10. 논리 연산자
+#### sizeof 연산자
 
-#### 4.11. 형 변환 연산자
+- **sizeof 연산자**는 개체 또는 형식의 크기를 바이트 단위로 반환한다.
 
-#### 4.12. 조건부 연산자
+```c
+#include <stdio.h>
 
-#### 4.13. \_Alignof 연산자
+int main(void) {
+    int i = 42;
+    printf("%zu\n", sizeof(i)); // 4 (바이트)
+    return 0;
+}
+```
 
-#### 4.14. 관계형 연산자
+#### 산술 연산자
 
-#### 4.15. 복합 할당 연산자
+- 단항 연산자 `+` 와 `-`
+- 논리 부정 연산자 `!`
+- 곱하기 연산자 `\*` `/` `%`
+- 더하기 연산자 `+` `-`
 
-#### 4.16. 쉼표 연산자
+```c
+#include <stdio.h>
 
-#### 4.17. 포인터 산술
+int main(void) {
+    int i = 42;
+    int j = 0;
+    printf("%d\n", +i); // 42
+    printf("%d\n", -i); // -42
+    printf("%d\n", !j); // 1
+    printf("%d\n", i * j); // 0
+    printf("%d\n", i / j); // 0
+    printf("%d\n", i % j); // 0
+    printf("%d\n", i + j); // 42
+    printf("%d\n", i - j); // 42
+    return 0;
+}
+```
+
+#### 비트 연산자
+
+(기말고사 때 다시 공부하기)
+
+- 보수 연산자 `~`
+- 시프트 연산자 `<<` `>>`
+- 비트 AND 연산자 `&`
+- 비트 XOR 연산자 `^` (배타적 OR)
+- 비트 OR 연산자 `|` (포과적 OR)
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42;
+    int j = 0;
+    printf("%d\n", ~i); // -43
+    printf("%d\n", i << 1); // 84
+    printf("%d\n", i >> 1); // 21
+    printf("%d\n", i & j); // 0
+    printf("%d\n", i ^ j); // 42
+    printf("%d\n", i | j); // 42
+    return 0;
+}
+```
+
+#### 논리 연산자
+
+- 논리 AND 연산자 `&&`
+- 논리 OR 연산자 `||`
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42;
+    int j = 0;
+    printf("%d\n", i && j); // 0
+    printf("%d\n", i || j); // 1
+    return 0;
+}
+```
+
+#### 형 변환 연산자
+
+- **형 변환 연산자type conversion operator**는 개체의 형식을 다른 형식으로 변환하는 것이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42;
+    printf("%f\n", (float) i); // 42.000000
+    return 0;
+}
+```
+
+#### 조건부 연산자
+
+- **조건부 연산자conditional operator**는 조건식을 평가한 다음 조건식의 결과에 따라 두 개의 식 중 하나를 평가하는 것이다. ( `_?_:_` )
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42;
+    int j = 0;
+    printf("%d\n", i > j ? i : j); // 42
+    return 0;
+}
+```
+
+#### \_Alignof 연산자
+
+Useful for testing (테스트에 유용하다)
+
+- **\_Alignof 연산자**는 개체의 정렬 요구 사항을 바이트 단위로 반환한다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42;
+    printf("%zu\n", _Alignof(int)); // 4
+    return 0;
+}
+```
+
+#### 관계형 연산자
+
+- **관계형 연산자relational operator**는 두 개의 피연산자를 비교하는 것이다.
+- 적다 `<`
+- 적거나 같다 `<=`
+- 크다 `>`
+- 크거나 같다 `>=`
+- 같다 `==`
+- 같지 않다 `!=`
+- **관계형 연산자의 결과**는 참 또는 거짓이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42;
+    int j = 0;
+    printf("%d\n", i < j); // 0
+    printf("%d\n", i <= j); // 0
+    printf("%d\n", i > j); // 1
+    printf("%d\n", i >= j); // 1
+    printf("%d\n", i == j); // 0
+    printf("%d\n", i != j); // 1
+    return 0;
+}
+```
+
+#### 복합 할당 연산자
+
+- **복합 할당 연산자compound assignment operator**는 할당 연산자와 다른 연산자를 결합한 것이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42;
+    printf("%d\n", i += 1); // 43
+    printf("%d\n", i -= 1); // 42
+    printf("%d\n", i *= 2); // 84
+    printf("%d\n", i /= 2); // 42
+    printf("%d\n", i %= 2); // 0
+    printf("%d\n", i &= 1); // 0
+    printf("%d\n", i |= 1); // 1
+    printf("%d\n", i ^= 1); // 0
+    printf("%d\n", i <<= 1); // 0
+    printf("%d\n", i >>= 1); // 0
+    return 0;
+}
+```
+
+#### 쉼표 연산자
+
+- **쉼표 연산자comma operator**는 두 개의 식을 평가한 다음 두 번째 식의 결과를 반환하는 것이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42, j = 0;
+    printf("%d\n", (i++, i)); // 43
+    printf("%d\n", (j++, i)); // 43
+    return 0;
+}
+```
+
+#### 포인터 산술
+
+- **포인터 산술pointer arithmetic**은 포인터에 정수를 더하거나 뺀다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42;
+    int *p = &i;
+    printf("%p\n", p); // 0x7ffeeb0b3a3c
+    printf("%p\n", p + 1); // 0x7ffeeb0b3a40
+    printf("%p\n", p - 1); // 0x7ffeeb0b3a38
+    return 0;
+}
+```
 
 [목차로 돌아가기](#midterm-guide--중간고사-가이드)
 
@@ -506,26 +844,235 @@ int main(void) {
 
 ### 5. 흐름 제어
 
-#### 5.1. 식문
+- 식 문(expression statements),
+- 복합 문(compound statements)
+- 선택 문(selection statements)
+- 반복 문(iteration statements),
+- 점프 문(jump statements)
 
-#### 5.2. 복합문
+#### 식문
 
-#### 5.3. 선택문
+- **식 문expression statement**은 식을 평가한 다음 결과를 폐기하는 것이다.
 
-- if 문
-- switch 문
+```c
+#include <stdio.h>
 
-#### 5.4. 반복문
+int main(void) {
+    int i = 42;
+    printf("%d\n", i); // 42
+    i + 1; // 폐기
+    return 0;
+}
+```
 
-- while 문
-- do...while 문
-- for 문
+#### 복합문
 
-#### 5.5. 점프문
+- **복합 문compound statement**은 여러 문을 하나의 문으로 결합하는 것이다.
 
-- goto 문
-- continue 문
-- break 문
-- return 문
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42;
+    {
+        int i = 0;
+        printf("%d\n", i); // 0
+    }
+    printf("%d\n", i); // 42
+    return 0;
+}
+```
+
+#### 선택문
+
+**if 문**
+
+- **if 문if statement**은 조건식을 평가한 다음 조건식의 결과에 따라 두 개의 문 중 하나를 실행하는 것이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42;
+    if (i > 0) {
+        printf("%d\n", i); // 42
+    } else {
+        printf("%d\n", -i); // 42
+    }
+    return 0;
+}
+```
+
+**if else if 문**
+
+- **if else if 문if else if statement**은 여러 조건식을 평가한 다음 조건식의 결과에 따라 여러 문 중 하나를 실행하는 것이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42;
+    if (i > 0) {
+        printf("%d\n", i); // 42
+    } else if (i < 0) {
+        printf("%d\n", -i); // 42
+    } else {
+        printf("%d\n", i); // 42
+    }
+    return 0;
+}
+```
+
+**switch 문**
+
+- **switch 문switch statement**은 조건식을 평가한 다음 조건식의 결과에 따라 여러 문 중 하나를 실행하는 것이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42;
+    switch (i) {
+        case 0:
+            printf("%d\n", i); // 42
+            break;
+        case 1:
+            printf("%d\n", i); // 42
+            break;
+        default:
+            printf("%d\n", i); // 42
+            break;
+    }
+    return 0;
+}
+```
+
+#### 반복문
+
+**while 문**
+
+- **while 문while statement**은 조건식을 평가한 다음 조건식의 결과가 참인 동안 문을 반복해서 실행하는 것이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 42;
+    while (i > 0) {
+        printf("%d\n", i); // 42 41 40 ... 1
+        i--;
+    }
+    return 0;
+}
+```
+
+**do...while 문**
+
+- **do...while 문do...while statement**은 문을 실행한 다음 조건식을 평가한 다음 조건식의 결과가 참인 동안 문을 반복해서 실행하는 것이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 0;
+    do {
+        printf("%d\n", i); // 0
+        i--;
+    } while (i > 0);
+    return 0;
+}
+```
+
+**for 문**
+
+- **for 문for statement**은 초기식을 평가한 다음 조건식을 평가한 다음 조건식의 결과가 참인 동안 문을 반복해서 실행하는 것이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    for (int i = 0; i < 10; i++) {
+        printf("%d\n", i); // 0 1 2 ... 9
+    }
+    return 0;
+}
+```
+
+#### 점프문
+
+**goto 문**
+
+- **goto 문goto statement**은 레이블로 표시된 문으로 이동하는 것이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int i = 0;
+    goto label;
+    i++;
+
+    label:
+    printf("%d\n", i); // 0
+    return 0;
+}
+```
+
+**continue 문**
+
+- **continue 문continue statement**은 반복문의 나머지 부분을 건너뛰는 것이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    for (int i = 0; i < 10; i++) {
+        if (i % 2 == 0) { // 짝수일 때
+            continue;
+        }
+        printf("%d\n", i); // 1 3 5 7 9
+    }
+    return 0;
+}
+```
+
+**break 문**
+
+- **break 문break statement**은 반복문을 종료하는 것이다.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    for (int i = 0; i < 10; i++) {
+        if (i == 5) {
+            break;
+        }
+        printf("%d\n", i); // 0 1 2 3 4
+    }
+    return 0;
+}
+```
+
+**return 문**
+
+- **return 문return statement**은 함수를 종료하는 것이다.
+
+```c
+#include <stdio.h>
+
+float divide(float a, float b) {
+    if (b == 0) {
+        return 0;
+    }
+    return a / b;
+}
+
+int main(void) {
+    printf("%f\n", divide(42, 0)); // 0.000000
+    printf("%f\n", divide(42, 1)); // 42.000000
+    return 0;
+}
+```
 
 [목차로 돌아가기](#midterm-guide--중간고사-가이드)
