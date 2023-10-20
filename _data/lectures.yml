@@ -67,8 +67,8 @@
   slides: "https://docs.google.com/presentation/d/12ipAGNkgpFjuvEGqwMeIEmDFCbpVjv9b1j8EJ8cxu_g/edit?usp=sharing"
   readings:
   logistics: >
-    퀴즈 링크<br>
-    실기 시험
+    <a href="https://forms.gle/aXew597GprFvpZCs9">퀴즈 링크</a><br>
+    <a href="">실기 시험</a>
 
 - date: 10/27
   week: 9
