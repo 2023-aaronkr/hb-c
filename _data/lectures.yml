@@ -74,9 +74,10 @@
   week: 9
   title: >
     <strong>6장: 동적으로 할당횐 메모리</strong>
-  slides:
+  slides: "https://docs.google.com/presentation/d/1gb6VGrYuWviw3ZJNP3AbYNPZFz0EzeYAVD6nUgOZte8/edit?usp=sharing"
   readings: Effective C, <strong>6장 pp. 171-199</strong>
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/njiKRsyJ">9주차 과제</a>
 
 - date: 11/3
   week: 10
