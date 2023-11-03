@@ -85,7 +85,8 @@
     <strong>7장: 문자와 문자열</strong>
   slides:
   readings: Effective C, <strong>7장 pp. 201-239</strong>
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/UX_-wHo2">10주차 과제</a>
 
 - date: 11/10
   week: 11
