@@ -92,9 +92,10 @@
   week: 11
   title: >
     <strong>8장: 입출력</strong>
-  slides:
+  slides: "https://docs.google.com/presentation/d/1Huj78ytbB9LMk3MaPZEfOt0igGVii0WLxNNrm-h8LVs/edit?usp=sharing"
   readings: Effective C, <strong>8장 pp. 241-271</strong>
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/uHKXbj87">11주차 과제</a>
 
 - date: 11/17
   week: 12
