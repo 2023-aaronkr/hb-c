@@ -103,7 +103,8 @@
     <strong>9장: 전처리기</strong>
   slides: "https://docs.google.com/presentation/d/1KFpGQMMFUZn62JgETIpQg7hnId3a1cHT0nHsAx6xiCs/edit?usp=sharing"
   readings: Effective C, <strong>9장 pp. 273-290</strong>
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/S8uRnlrD">12주차 과제</a>
 
 - date: 11/24
   week: 13
