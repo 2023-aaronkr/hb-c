@@ -110,9 +110,10 @@
   week: 13
   title: >
     <strong>10장: 프로그램 구조</strong>
-  slides:
+  slides: "https://docs.google.com/presentation/d/1OjbuKqcz30bxQJ5C3-usH_D_vQvHyIeLFX5-63phts4/edit?usp=sharing"
   readings: Effective C, <strong>10장 pp. 291-310</strong>
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/4kwoHzDk">13주차 과제</a>
 
 - date: 12/1
   week: 14
