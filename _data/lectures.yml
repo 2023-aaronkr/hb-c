@@ -121,7 +121,8 @@
     <strong>11장: 디버깅과 테스트, 분석</strong>
   slides: "https://docs.google.com/presentation/d/1VBkS-uHawgkVf-jq4c9kT9ksEkgo-B6IHGGF-D4dxa8/edit?usp=sharing"
   readings: Effective C, <strong>11장 pp. 311-342</strong>
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/bHsBCcd9">14주차 과제</a>
 
 - date: 12/8
   week: 15
