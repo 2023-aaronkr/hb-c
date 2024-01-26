@@ -74,57 +74,74 @@
   week: 9
   title: >
     <strong>6장: 동적으로 할당횐 메모리</strong>
-  slides:
+  slides: "https://docs.google.com/presentation/d/1gb6VGrYuWviw3ZJNP3AbYNPZFz0EzeYAVD6nUgOZte8/edit?usp=sharing"
   readings: Effective C, <strong>6장 pp. 171-199</strong>
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/njiKRsyJ">9주차 과제</a>
 
 - date: 11/3
   week: 10
   title: >
     <strong>7장: 문자와 문자열</strong>
-  slides:
+  slides: "https://docs.google.com/presentation/d/1cZerqaKDEepr1zXRLh1RTvOEQIuwkGFbHxAA8AHPmuQ/edit?usp=sharing"
   readings: Effective C, <strong>7장 pp. 201-239</strong>
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/UX_-wHo2">10주차 과제</a>
 
 - date: 11/10
   week: 11
   title: >
     <strong>8장: 입출력</strong>
-  slides:
+  slides: "https://docs.google.com/presentation/d/1Huj78ytbB9LMk3MaPZEfOt0igGVii0WLxNNrm-h8LVs/edit?usp=sharing"
   readings: Effective C, <strong>8장 pp. 241-271</strong>
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/uHKXbj87">11주차 과제</a>
 
 - date: 11/17
   week: 12
   title: >
     <strong>9장: 전처리기</strong>
-  slides:
+  slides: "https://docs.google.com/presentation/d/1KFpGQMMFUZn62JgETIpQg7hnId3a1cHT0nHsAx6xiCs/edit?usp=sharing"
   readings: Effective C, <strong>9장 pp. 273-290</strong>
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/S8uRnlrD">12주차 과제</a>
 
 - date: 11/24
   week: 13
   title: >
     <strong>10장: 프로그램 구조</strong>
-  slides:
+  slides: "https://docs.google.com/presentation/d/1OjbuKqcz30bxQJ5C3-usH_D_vQvHyIeLFX5-63phts4/edit?usp=sharing"
   readings: Effective C, <strong>10장 pp. 291-310</strong>
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/4kwoHzDk">13주차 과제</a>
 
 - date: 12/1
   week: 14
   title: >
     <strong>11장: 디버깅과 테스트, 분석</strong>
-  slides:
+  slides: "https://docs.google.com/presentation/d/1VBkS-uHawgkVf-jq4c9kT9ksEkgo-B6IHGGF-D4dxa8/edit?usp=sharing"
   readings: Effective C, <strong>11장 pp. 311-342</strong>
-  logistics:
+  logistics: >
+    <a href="https://classroom.github.com/a/bHsBCcd9">14주차 과제</a>
 
 - date: 12/8
   week: 15
   title: >
     <span style="color: red">5주차 보강</span><br>
-    <strong>Final Project?</strong>
+    <strong>Final Project + Review</strong>
+  slides: "https://docs.google.com/presentation/d/1D_Q9FW0FXYYIn8WubgX6O_QAGDWu8pzz1mqbeedl2OY/edit?usp=sharing"
+  logistics: >
+    <a href="https://classroom.github.com/a/DjeU9TPy">15주차 과제</a>
 
 - date: 12/15
   week: 16
   title: >
     <strong>Final Test</strong>
+  logistics: >
+    <a href="https://forms.gle/2E1Bs3FWCwdVC1Pc9">퀴즈 링크</a><br>
+    <a href="https://classroom.github.com/a/LA_pfLuP">실기 시험</a>
+
+- date: 12/22
+  week: 17
+  title: >
+    <strong>Final Grades</strong>
